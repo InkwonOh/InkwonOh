@@ -85,7 +85,7 @@ body {
 }
 
 .cover-section.resume {
-    background: url('https://image.newdaily.co.kr/site/data/img/2021/07/20/2021072000021_0.jpg') no-repeat center / cover;
+    background: url('../images/bg_resume.png') no-repeat center / cover;
 }
 .cover-section.career {
     background: url('https://image.newdaily.co.kr/site/data/img/2021/07/20/2021072000021_0.jpg') no-repeat center / cover;
@@ -142,7 +142,7 @@ body {
     flex-shrink: 0;
     width: 150px;
     font-family: 'Rajdhani', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: -0.03em;
@@ -174,8 +174,8 @@ body {
 }
 .resume-item .value .txt-detail {
     margin-top: 4px;
-    padding-left: 1.5em;
-    font-size: 14px;
+    padding-left: 24px;
+    font-size: 16px;
     line-height: 1.5;
     color: #777;
     letter-spacing: -0.05em;
