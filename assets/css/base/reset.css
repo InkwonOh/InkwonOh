@@ -5,16 +5,26 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-body, h1, h2, p, div, a, img {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
 
 body *,
 body *::before,
 body *::after {
 	box-sizing: border-box;
+}
+
+body, h1, h2, p, div, a, img, video, figure, figcaption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+}
+
+ul li {
+	line-height: 1.5;
+	letter-spacing: -0.03em;
 }
 
 .no-style {
@@ -32,4 +42,8 @@ a {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+img {
+	max-width: 100%;
 }

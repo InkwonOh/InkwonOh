@@ -1,0 +1,163 @@
+.content-section.career .inner {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+/* Usability Test */
+.ut-group {
+    margin-top: 56px;
+}
+
+.ut-group.user {
+    display: flex;
+    align-items: center;
+}
+
+.ut-group.user img {
+    width: 76px;
+    height: 76px;
+}
+
+.ut-group.user ul {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0 0 0 24px;
+}
+
+.ut-group h4 {
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    word-break: break-all;
+}
+
+.ut-group h4::before {
+    content: 'Task. ';
+    font-weight: 700;
+    color: #25B9B9;
+}
+
+.ut-group .box {
+    margin-top: 16px;
+    border: 1px solid #B8B8B8;
+}
+
+.ut-group .box .top {
+    padding: 16px;
+    background-color: #FAFAFA;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.05em;
+    color: #777;
+}
+
+.ut-group .box .bottom {
+    display: flex;
+    border-top: 1px solid #B8B8B8;
+    padding: 16px;
+    font-weight: 500;
+}
+
+.ut-group .issue {
+    font-weight: 500;
+    color: #777;
+}
+.ut-group .issue::after {
+    content: '';
+    display: inline-block;
+    margin: 0 8px;
+    width: 1px;
+    height: 14px;
+    background-color: #dcdcdc;
+    vertical-align: middle;
+    transform: translateY(-1px);
+}
+
+@media screen and (max-width: 600px) {
+    .ut-group .box .bottom {
+        flex-direction: column;
+    }
+    .ut-group .issue { 
+        margin-bottom: 8px;
+    }
+    .ut-group .issue::after { 
+        display: none;
+    }
+}
+
+.bg-gray {
+    background-color: #F8F8F8;
+}
+
+.question {
+    margin-bottom: 48px;
+    line-height: 1.5;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+}
+
+.screenshot.newal {
+    margin: 100px -190px 0;
+    width: 1180px;
+}
+
+.scroll-x {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 50px;
+    white-space: nowrap;
+}
+
+.scroll-x img {
+    flex-shrink: 0;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    margin-top: 24px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 700;
+    color: #606060;
+    text-align: center;
+}
+
+.other-desc {
+    margin-top: 8px;
+    padding: 16px;
+    border: 1px solid #B8B8B8;
+    background-color: #fff;
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: -0.03em;
+}
+
+@media screen and (max-width: 1280px) {
+    .career-page {
+        min-width: 1280px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .career-page {
+        min-width: auto;
+    }
+    .screenshot.newal {
+        margin: 80px 0 0;
+        width: 100%;
+    }
+    figure {
+        flex-shrink: 0;
+    }
+    figure img {
+        width: auto;
+        height: 50vh;
+    }
+    .scroll-x {
+        justify-content: flex-start;
+        gap: 16px;
+        overflow: auto;
+    }
+}

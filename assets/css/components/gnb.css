@@ -8,33 +8,56 @@
     box-shadow: 0 3px 5px rgba(0,0,0,0.08);
 }
 
-.gnb .logo img {
+.gnb .logo {
+    flex-shrink: 0;
     display: block;
+    margin-right: 48px;
     width: 56px;
     height: 56px;
     border-radius: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 599px) {
+    .gnb {
+        height: 80px;
+    }
+    .gnb .logo {
+        margin-right: 32px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .gnb .logo {
+        display: none;
+    }
+}
+
+.gnb .logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .gnb .inner {
     display: flex;
     align-items: center;
+    overflow-y: auto;
 }
 
 .gnb-list {
     display: flex;
     height: 100%;
-    margin-left: 48px;
     list-style: none;
 }
 
-.gnb-item {
-    margin-right: 32px;
+.gnb-item:not(:first-child) {
+    margin-left: 32px;
 
 }
 
 .gnb-link {
     display: inline-block;
-    font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
 }

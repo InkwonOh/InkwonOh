@@ -8,7 +8,7 @@
 }
 
 .cover-section.resume {
-    background: url('../images/bg_resume.png') no-repeat center / cover;
+    background: url('../../images/bg_resume.png') no-repeat center / cover;
 }
 .cover-section.career {
     background: url('https://image.newdaily.co.kr/site/data/img/2021/07/20/2021072000021_0.jpg') no-repeat center / cover;
