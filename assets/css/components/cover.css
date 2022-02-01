@@ -1,0 +1,46 @@
+/* COVER */
+.cover-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.cover-section.resume {
+    background: url('../images/bg_resume.png') no-repeat center / cover;
+}
+.cover-section.career {
+    background: url('https://image.newdaily.co.kr/site/data/img/2021/07/20/2021072000021_0.jpg') no-repeat center / cover;
+}
+.cover-section.project {
+    background: url('https://image.newdaily.co.kr/site/data/img/2021/07/20/2021072000021_0.jpg') no-repeat center / cover;
+}
+
+.cover-section::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.cover-section.resume::before {
+    background-color: rgba(43, 43, 43, 0.8);
+}
+.cover-section.career::before {
+    background-color: rgba(37, 185, 185, 0.8);
+}
+.cover-section.project::before {
+    background-color: rgba(108, 37, 185, 0.8);
+}
+
+.cover-section .cover-title {
+    position: relative;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 48px;
+    color: #fff;
+    text-transform: uppercase;
+}

@@ -1,0 +1,49 @@
+/* GNB */
+.gnb {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    font-family: 'Rajdhani', sans-serif;
+    color: #353535;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.08);
+}
+
+.gnb .logo img {
+    display: block;
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+}
+
+.gnb .inner {
+    display: flex;
+    align-items: center;
+}
+
+.gnb-list {
+    display: flex;
+    height: 100%;
+    margin-left: 48px;
+    list-style: none;
+}
+
+.gnb-item {
+    margin-right: 32px;
+
+}
+
+.gnb-link {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.gnb-link.is-active {
+    font-weight: 700;
+    border-bottom: 2px solid #666;
+}
+
+.gnb-link:not(.is-active):hover {
+    opacity: 0.5;
+}
