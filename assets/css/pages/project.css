@@ -7,8 +7,9 @@
     margin-top: 80px;
 }
 
-.design-group img {
-    margin: 24px 0;
+.design-group img,
+.design-group p {
+    margin-top: 24px;
 }
 
 
@@ -40,7 +41,7 @@
 @media screen and (min-width: 801px) {
     .sc-group {
         margin-top: 150px;
-        height: calc(783px * 5 - 150px);
+        height: calc(783px * 5 - 200px);
     }
 
     .pc-row {
@@ -53,20 +54,16 @@
     }
 
     .pc-row + .pc-row {
-        margin-top: 150px;
         height: 783px;
     }
 
     .pc-row .txt-box {
         max-width: 360px;
     }
-
-    .pc-row:first-of-type .txt-box h4 {
-        padding-top: 56px;
-    }
-
+    
     .pc-row .txt-box h4 {
         margin-bottom: 16px;
+        padding-top: 234px;
         font-size: 48px;
     }
 
@@ -84,24 +81,20 @@
         flex-direction: row-reverse;
     }
 
-    .pc-row:not(:first-of-type) .vid-box video {
-        transform: translateY(-200px);
-    }
-
     .pc-row:nth-of-type(2) {
-        transform: translateY(0px);
+        transform: translateY(-80px);
     }
 
     .pc-row:nth-of-type(3) {
-        transform: translateY(-200px);
+        transform: translateY(-160px);
     }
 
     .pc-row:nth-of-type(4) {
-        transform: translateY(-400px);
+        transform: translateY(-240px);
     }
 
     .pc-row:nth-of-type(5) {
-        transform: translateY(-600px);
+        transform: translateY(-300px);
     }
 
    

@@ -98,7 +98,7 @@
 }
 
 .screenshot.newal {
-    margin: 100px -190px 0;
+    margin: 80px -190px 0;
     width: 1180px;
 }
 
@@ -122,6 +122,54 @@ figcaption {
     font-weight: 700;
     color: #606060;
     text-align: center;
+}
+
+.design-explain {
+    margin: 56px auto 0;
+    max-width: 800px;
+}
+
+.design-explain .design-title {
+    margin-bottom: 16px;
+}
+
+.design-explain .design-title::before {
+    content: 'Page. ';
+    font-weight: 700;
+    color: #25B9B9;
+}
+
+.design-explain .as-is,
+.design-explain .to-be {
+    display: flex;
+    padding: 16px;
+    background-color: #fff;
+}
+
+.design-explain .as-is {
+    background-color: #FAFAFA;
+    color: #777;
+}
+
+.bg-gray .design-explain .as-is {
+    background-color: #fff;
+}
+
+.design-explain .as-is .desc {
+    font-size: 14px;
+}
+
+.design-explain .to-be {
+    border: 1px solid #25B9B9;
+}
+
+.design-explain .label {
+    flex-shrink: 0;
+    margin-right: 16px;
+    padding-right: 16px;
+    width: 56px;
+    text-align: center;
+    border-right: 1px solid #DCDCDC;
 }
 
 .other-desc {
