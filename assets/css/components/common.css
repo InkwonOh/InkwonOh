@@ -29,12 +29,14 @@ body {
     right: 40px;
     display: block;
     cursor: pointer;
+    z-index: 9000;
 }
 
 @media screen and (max-width: 599px) {
     .go-to-top {
         bottom: 20px;
         right: 20px;
+        width: 40px;
     }
 }
 
