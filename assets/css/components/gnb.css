@@ -1,18 +1,23 @@
 /* GNB */
-/* body {
-    padding-top: 100px;
-} */
+body {
+    padding-top: 80px;
+}
 .gnb {
-    /* position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
-    right: 0; */
+    right: 0;
     display: flex;
     align-items: center;
     height: 80px;
     font-family: 'Rajdhani', sans-serif;
     box-shadow: 0 3px 5px rgba(0,0,0,0.08);
     z-index: 1;
+    transform: translateY(0);
+}
+
+.gnb.down {
+    transform: translateY(-100%);
 }
 
 .gnb .logo {
@@ -87,6 +92,9 @@
 }
 
 @media screen and (max-width: 599px) {
+    body {
+        padding-top: 60px;
+    }
     .gnb {
         height: 60px;
     }   

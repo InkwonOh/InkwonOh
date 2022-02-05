@@ -28,12 +28,12 @@ html.dark body {
 /* gnb */
 .gnb {
     background-color: var(--light-body-bg);
-    transition: background-color, color 0.35s linear;
+    transition: background-color, color, transform 0.35s linear;
 }
 html.dark .gnb {
     background-color: var(--dark-gnb-bg);
     color: var(--dark-gnb-color);
-    transition: background-color, color 0.35s linear;
+    transition: background-color, color, transform 0.35s linear;
 }
 
 /* career */
