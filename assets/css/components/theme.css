@@ -1,0 +1,45 @@
+:root {
+    --light-body-bg: #fff;
+    --dark-body-bg: #222;
+    --light-body-color: #000;
+    --dark-body-color: #e8e8e8;
+
+    --light-gnb-bg: #fff;
+    --dark-gnb-bg: #191919;
+    --light-gnb-color: #353535;
+    --dark-gnb-color: #e8e8e8;
+
+    --light-gray-bg: #F8F8F8;
+    --dark-gray-bg: #191919;
+}
+
+/* body */
+body {
+    background-color: var(--light-body-bg);
+    color: var(--light-body-color);
+    transition: background-color, color 0.35s linear;
+}
+html.dark body {
+    background-color: var(--dark-body-bg);
+    color: var(--dark-body-color);
+    transition: background-color, color 0.35s linear;
+}
+
+/* gnb */
+.gnb {
+    background-color: var(--light-body-bg);
+    transition: background-color, color 0.35s linear;
+}
+html.dark .gnb {
+    background-color: var(--dark-gnb-bg);
+    color: var(--dark-gnb-color);
+    transition: background-color, color 0.35s linear;
+}
+
+/* career */
+.bg-gray {
+    background-color: var(--light-gray-bg);
+}
+html.dark .bg-gray {
+    background-color: var(--dark-gray-bg);
+}

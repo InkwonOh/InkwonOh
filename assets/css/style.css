@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700');
 @import url(./base/reset.css);
 @import url(./base/preset.css);
 
+@import url(./components/theme.css);
 @import url(./components/common.css);
 @import url(./components/gnb.css);
 @import url(./components/contents.css);

@@ -3,6 +3,7 @@ body {
     font-size: 14px;
     color: #000;
 	-webkit-font-smoothing: antialiased;
+	overscroll-behavior: none;
 }
 
 
@@ -12,7 +13,7 @@ body *::after {
 	box-sizing: border-box;
 }
 
-body, h1, h2, p, div, a, img, video, figure, figcaption {
+body, h1, h2, p, div, a, img, video, figure, figcaption, button, ul, li {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -22,16 +23,10 @@ h1, h2, h3, h4 {
 	margin: 0;
 }
 
-ul li {
-	line-height: 1.5;
-	letter-spacing: -0.03em;
-}
-
-.no-style {
+ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	list-style-position: inside;
 }
 
 a {
@@ -47,4 +42,10 @@ table {
 img {
 	display: block;
 	max-width: 100%;
+}
+
+button {
+	border: 0;
+	background-color: transparent;
+	box-shadow: none;
 }
