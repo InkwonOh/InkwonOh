@@ -23,6 +23,21 @@ body {
     max-width: 1180px;;
 }
 
+.go-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: block;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 599px) {
+    .go-to-top {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
 ul:not(.no-style) li {
 	line-height: 1.5;
 	letter-spacing: -0.03em;
