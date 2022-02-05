@@ -1,8 +1,16 @@
+.content-section {
+    position: relative;
+    margin-top: 300px; /* cover height */
+    z-index: 1;
+}
 .content-section .inner {
     padding-top: 120px;
     padding-bottom: 150px;
 }
 @media screen and (max-width: 599px) {
+    .content-section {
+        margin-top: 200px; /* cover height */
+    }
     .content-section .inner {
         padding-top: 80px;
         padding-bottom: 120px;

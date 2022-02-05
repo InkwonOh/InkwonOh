@@ -4,7 +4,14 @@ let ticking = false;
 
 function doSomething(scroll_pos) {
     const gnb = document.querySelector('.gnb');
-    window.pageYOffset > scroll_pos ? gnb.classList.add('down') : gnb.classList.remove('down');
+    if (scroll_pos > 300) {
+        if (window.pageYOffset > scroll_pos) {
+            gnb.classList.add('down');
+        }
+        else {
+            gnb.classList.remove('down');
+        }
+    }
     lastScrollY = window.pageYOffset;
 }
 

@@ -14,12 +14,12 @@
 }
 
 /* body */
-body {
+.content-section {
     background-color: var(--light-body-bg);
     color: var(--light-body-color);
     transition: background-color, color 0.35s linear;
 }
-html.dark body {
+html.dark .content-section {
     background-color: var(--dark-body-bg);
     color: var(--dark-body-color);
     transition: background-color, color 0.35s linear;
@@ -30,6 +30,7 @@ html.dark body {
     background-color: var(--light-body-bg);
     transition: background-color, color, transform 0.35s linear;
 }
+html.dark body,
 html.dark .gnb {
     background-color: var(--dark-gnb-bg);
     color: var(--dark-gnb-color);
@@ -42,4 +43,8 @@ html.dark .gnb {
 }
 html.dark .bg-gray {
     background-color: var(--dark-gray-bg);
+}
+html.dark .ut-group .box .top,
+html.dark .design-explain .as-is {
+    background-color: #eee;
 }

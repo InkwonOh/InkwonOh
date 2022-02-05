@@ -1,9 +1,13 @@
 /* COVER */
 .cover-section {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 80px; /* gnb height */
     height: 300px;
 }
 
@@ -49,6 +53,7 @@
 
 @media screen and (max-width: 599px) {
     .cover-section {
+        margin-top: 60px; /* gnb height */
         height: 200px;
     }
     .cover-section .cover-title {
