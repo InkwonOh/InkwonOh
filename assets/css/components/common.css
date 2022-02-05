@@ -25,18 +25,19 @@ body {
 
 .go-to-top {
     position: fixed;
-    bottom: 40px;
+    bottom: 56px;
     right: 40px;
     display: block;
-    cursor: pointer;
+    border-radius: 100%;
     z-index: 9000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 599px) {
     .go-to-top {
         bottom: 20px;
         right: 20px;
-        width: 40px;
     }
 }
 
