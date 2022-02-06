@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         html.classList.add('dark');
-        btnDark.setAttribute('data-darkmode', 'false');
+        btnDark.setAttribute('data-darkmode', 'true');
     }
 
     document.body.style.visibility = 'visible';
