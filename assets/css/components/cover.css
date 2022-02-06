@@ -4,11 +4,7 @@
     top: 0;
     left: 0;
     right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px; /* gnb height */
-    height: 300px;
+    height: 600px;
 }
 
 .cover-section.resume {
@@ -43,9 +39,11 @@
 
 .cover-section .cover-title {
     position: relative;
+    padding-top: 200px;
     font-family: 'Rajdhani', sans-serif;
     font-size: 48px;
     color: #fff;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 3px 7px 10px rgba(0,0,0,0.3);
@@ -53,10 +51,11 @@
 
 @media screen and (max-width: 599px) {
     .cover-section {
-        margin-top: 60px; /* gnb height */
-        height: 200px;
+        height: 400px;
     }
     .cover-section .cover-title {
+        padding-top: 130px;
         font-size: 38px;
+        letter-spacing: 0px;
     }
 }

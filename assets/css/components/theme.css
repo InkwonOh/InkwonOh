@@ -30,7 +30,6 @@ html.dark .content-section {
     background-color: var(--light-body-bg);
     transition: background-color, color, transform 0.35s linear;
 }
-html.dark body,
 html.dark .gnb {
     background-color: var(--dark-gnb-bg);
     color: var(--dark-gnb-color);
