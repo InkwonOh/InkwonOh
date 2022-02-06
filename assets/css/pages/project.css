@@ -5,6 +5,7 @@
 .design-group .img-area {
     position: relative;
     display: block;
+    border: 1px solid currentColor;
 }
 
 @media (hover: hover)  {   
@@ -18,8 +19,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(0,0,0,0.7);
+        background-color: rgba(0,0,0,0.6);
+        font-size: 24px;
+        font-weight: 700;
         color: #fff;
+        letter-spacing: -0.03em;
         opacity: 0;
         transition: opacity 0.35s;
     }
