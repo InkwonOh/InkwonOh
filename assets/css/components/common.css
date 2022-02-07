@@ -1,8 +1,5 @@
 /* COMMON */
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-size: 16px;
     word-break: keep-all;
@@ -87,10 +84,9 @@ ul.no-margin li {
 .footer {
     margin-top: auto;
     padding: 32px 0;
-    background-color: #111;
+    background-color: #191919;
     font-size: 12px;
     line-height: 24px;
-    color: #fff;
+    color: #e8e8e8;
     text-align: center;
-    opacity: 0.8;
 }
