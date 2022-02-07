@@ -99,8 +99,11 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    gap: 50px;
     white-space: nowrap;
+}
+
+.scroll-x figure + figure {
+    margin-left: 50px;
 }
 
 .scroll-x img {
@@ -211,7 +214,9 @@ figcaption {
     }
     .scroll-x {
         justify-content: flex-start;
-        gap: 16px;
         overflow: auto;
+    }
+    .scroll-x figure + figure {
+        margin-left: 16px;
     }
 }
