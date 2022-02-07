@@ -1,12 +1,12 @@
 :root {
     --light-body-bg: #fff;
-    --dark-body-bg: #222;
     --light-body-color: #000;
+    --dark-body-bg: #222;
     --dark-body-color: #e8e8e8;
 
     --light-gnb-bg: #fff;
-    --dark-gnb-bg: #191919;
     --light-gnb-color: #353535;
+    --dark-gnb-bg: #191919;
     --dark-gnb-color: #e8e8e8;
 
     --light-gray-bg: #F8F8F8;
@@ -15,6 +15,10 @@
 
 /* body */
 .content-section {
+    /* IE fallback */
+    background-color: #fff;
+    color: #000;
+
     background-color: var(--light-body-bg);
     color: var(--light-body-color);
     transition: background-color, color 0.35s linear;
@@ -27,7 +31,12 @@ html.dark .content-section {
 
 /* gnb */
 .gnb {
-    background-color: var(--light-body-bg);
+    /* IE fallback */
+    background-color: #fff;
+    color: #353535;
+
+    background-color: var(--light-gnb-bg);
+    color: var(--light-gnb-color);
     transition: background-color, color, transform 0.35s linear;
 }
 html.dark .gnb {
@@ -38,6 +47,8 @@ html.dark .gnb {
 
 /* career */
 .bg-gray {
+    /* IE fallback */
+    background-color: #f8f8f8;
     background-color: var(--light-gray-bg);
 }
 html.dark .bg-gray {

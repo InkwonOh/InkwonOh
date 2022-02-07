@@ -29,46 +29,56 @@ window.addEventListener('scroll', function () {
 
 // 페이지 로드 
 document.addEventListener('DOMContentLoaded', () => {
-    document.body.style.visibility = 'hidden';
+    if (navigator.userAgent.indexOf('Trident') < 0) { // if not IE
+        document.body.style.visibility = 'hidden';
 
-    const html = document.documentElement;
-    const btnDark = document.querySelector('#btn-theme');
-    const storedTheme = localStorage.getItem('darkTheme');
+        const html = document.documentElement;
+        const btnDark = document.querySelector('#btn-theme');
+        const storedTheme = localStorage.getItem('darkTheme');
 
-    if (storedTheme !== null) {
-        if (storedTheme === 'true') {
+        if (storedTheme !== null) {
+            if (storedTheme === 'true') {
+                html.classList.add('dark');
+                btnDark.setAttribute('data-darkmode', 'true');
+            }
+        }
+        else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             html.classList.add('dark');
             btnDark.setAttribute('data-darkmode', 'true');
         }
-    }
-    else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        html.classList.add('dark');
-        btnDark.setAttribute('data-darkmode', 'true');
-    }
 
-    document.body.style.visibility = 'visible';
+        document.body.style.visibility = 'visible';
+    }
+    else {
+        document.querySelector('#btn-theme').style.display = 'none';
+    }
 })
 
 window.addEventListener('load', function () {
-    // Darkmode
-    const html = document.documentElement;
-    const btnDark = document.querySelector('#btn-theme');
+    if (navigator.userAgent.indexOf('Trident') < 0) { // if not IE
+        // Darkmode
+        const html = document.documentElement;
+        const btnDark = document.querySelector('#btn-theme');
 
-    btnDark.addEventListener('click', function () {
-        html.classList.toggle('dark');
-        isDarkMode = btnDark.getAttribute('data-darkmode');
+        btnDark.addEventListener('click', function () {
+            html.classList.toggle('dark');
+            isDarkMode = btnDark.getAttribute('data-darkmode');
 
-        if (isDarkMode === 'false') { // 현재OFF, 버튼눌러서ON
-            btnDark.setAttribute('data-darkmode', 'true');
-            localStorage.setItem('darkTheme', 'true');
-            console.log(localStorage)
-        }
-        else { // 현재ON, 버튼눌러서OFF
-            btnDark.setAttribute('data-darkmode', 'false');
-            localStorage.setItem('darkTheme', 'false');
-            console.log(localStorage)
-        }
-    });
+            if (isDarkMode === 'false') { // 현재OFF, 버튼눌러서ON
+                btnDark.setAttribute('data-darkmode', 'true');
+                localStorage.setItem('darkTheme', 'true');
+                console.log(localStorage)
+            }
+            else { // 현재ON, 버튼눌러서OFF
+                btnDark.setAttribute('data-darkmode', 'false');
+                localStorage.setItem('darkTheme', 'false');
+                console.log(localStorage)
+            }
+        });
+    }
+    else {
+        document.querySelector('#btn-theme').style.display = 'none';
+    }
 
     // Go to top
     const goToTop = document.querySelector('#go-to-top');
