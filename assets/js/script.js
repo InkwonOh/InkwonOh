@@ -31,7 +31,7 @@ window.addEventListener('scroll', function () {
 const isIE = (window.navigator.userAgent.indexOf('Trident') != -1);
 
 // 페이지 로드 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
     const html = document.documentElement;
     const btnDark = document.querySelector('#btn-theme');
     const storedTheme = localStorage.getItem('darkTheme');
