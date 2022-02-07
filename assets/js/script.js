@@ -32,27 +32,26 @@ const isIE = (window.navigator.userAgent.indexOf('Trident') != -1);
 
 // 페이지 로드 
 document.addEventListener('DOMContentLoaded', () => {
-    document.body.style.visibility = 'hidden';
-
     const html = document.documentElement;
     const btnDark = document.querySelector('#btn-theme');
     const storedTheme = localStorage.getItem('darkTheme');
 
-    if (storedTheme !== null) {
-        if (storedTheme === 'true') {
+    if (isIE) {
+        btnDark.style.display = 'none';
+    }
+    else {
+
+        if (storedTheme !== null) {
+            if (storedTheme === 'true') {
+                html.classList.add('dark');
+                btnDark.setAttribute('data-darkmode', 'true');
+            }
+        }
+        else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             html.classList.add('dark');
             btnDark.setAttribute('data-darkmode', 'true');
         }
-    }
-    else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        html.classList.add('dark');
-        btnDark.setAttribute('data-darkmode', 'true');
-    }
-
-    document.body.style.visibility = 'visible';
-
-    if (isIE) {
-        btnDark.style.display = 'none';
+        document.body.style.visibility = 'visible';
     }
 })
 
