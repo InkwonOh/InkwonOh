@@ -27,6 +27,9 @@ window.addEventListener('scroll', function () {
 });
 
 
+
+const isIE = (window.navigator.userAgent.indexOf('Trident') != -1);
+
 // 페이지 로드 
 document.addEventListener('DOMContentLoaded', () => {
     document.body.style.visibility = 'hidden';
@@ -48,8 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.body.style.visibility = 'visible';
 
-    if (window.navigator.userAgent.indexOf('Trident') != -1) { // if IE
-        document.querySelector('#btn-theme').style.display = 'none';
+    if (isIE) {
+        btnDark.style.display = 'none';
     }
 })
 
@@ -76,7 +79,12 @@ window.addEventListener('load', function () {
     const goToTop = document.querySelector('#go-to-top');
 
     goToTop.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        if (isIE) {
+            window.scrollTo(0);
+        }
+        else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     });
 
     // Table Of Content
