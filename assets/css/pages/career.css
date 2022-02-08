@@ -91,8 +91,19 @@
 }
 
 .screenshot.newal {
-    margin: 80px -190px 0;
+    margin-top: 100px;
+}
+.screenshot.wide {
+    margin-left: -190px;
+    margin-right: -190px;
     width: 1180px;
+}
+
+@media screen and (max-width: 1280px) {
+    .screenshot.newal {
+        margin: 80px 0 0;
+        width: 100%;
+    }
 }
 
 .scroll-x {
@@ -100,6 +111,9 @@
     flex-wrap: nowrap;
     justify-content: center;
     white-space: nowrap;
+}
+.scroll-x::-webkit-scrollbar {
+    display: none;
 }
 
 .scroll-x figure + figure {
@@ -167,6 +181,29 @@ figcaption {
     width: 56px;
     text-align: center;
     border-right: 1px solid #DCDCDC;
+    letter-spacing: -0.03em;
+}
+
+.design-explain .as-is ul li {
+    margin: 0;
+    line-height: 1.5;
+}
+.design-explain .as-is ul li::before {
+    width: 3px;
+    height: 3px;
+    border: 0;
+    background-color: currentColor;
+}
+.design-explain .to-be ul li {
+    margin: 0;
+    line-height: 1.6;
+}
+.design-explain .to-be ul li::before {
+    top: 11px;
+    width: 4px;
+    height: 4px;
+    border: 0;
+    background-color: currentColor;
 }
 
 @media screen and (max-width: 599px) {
@@ -186,22 +223,18 @@ figcaption {
     
 }
 
+.other-img {
+    background-color: #fff;
+}
 .other-desc {
     margin-top: 8px;
     padding: 16px;
     border: 1px solid #B8B8B8;
-    background-color: #fff;
+    background-color: #FAFAFA;
     color: #000;
     line-height: 1.5;
     font-size: 16px;
     letter-spacing: -0.03em;
-}
-
-@media screen and (max-width: 1280px) {
-    .screenshot.newal {
-        margin: 80px 0 0;
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 599px) {
@@ -209,8 +242,12 @@ figcaption {
         flex-shrink: 0;
     }
     figure img {
-        width: auto;
-        height: 50vh;
+        width: 50vw;
+        height: auto;
+    }
+    figcaption {
+        margin-top: 12px;
+        font-size: 14px;
     }
     .scroll-x {
         justify-content: flex-start;

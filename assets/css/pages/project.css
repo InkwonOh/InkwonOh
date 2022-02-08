@@ -8,6 +8,115 @@
     border: 1px solid currentColor;
 }
 
+.design-group ul li {
+    margin: 0;
+    line-height: 1.6;
+}
+.design-group ul li::before {
+    top: 11px;
+    width: 4px;
+    height: 4px;
+    border: 0;
+    background-color: currentColor;
+}
+
+.strategy-area {
+    display: flex;
+    margin-top: 56px;
+}
+
+.strategy-area ul {
+    position: relative;
+    display: flex;
+    margin: 0 16px;
+    width: 100%;
+}
+
+.strategy-area ul li {
+    flex: 1;
+    max-width: 220px;
+    text-align: center;
+    z-index: 1;
+}
+
+.strategy-area ul::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 82px;
+    left: -16px;
+    width: calc(100% + 32px);
+    height: 56px;
+    border-radius: 28px;
+    background-color: #FF8742;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.strategy-area ul li + li {
+    margin-left: 32px;
+}
+
+.strategy-area .keyword {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 1px solid #FF5823;
+    border-radius: 100%;
+    font-weight: 700;
+}
+
+.strategy-area .description i {
+    display: block;
+}
+
+/* soundcloud */
+.strategy-area.soundcloud ul {
+    max-width: 490px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.strategy-area.soundcloud ul::after {
+    background-color: #25B9B9;
+}
+.strategy-area.soundcloud ul li + li {
+    margin-left: 50px;
+}
+.strategy-area.soundcloud .keyword {
+    border-color: #25B9B9;
+}
+
+
+@media screen and (max-width: 799px) {
+    .strategy-area {
+        margin-top: 32px;
+    }
+    .strategy-area ul {
+        margin: 0;
+    }
+    .strategy-area.hiver .keyword {
+        background-color: rgba(255, 135, 66, 0.1);
+    }
+    .strategy-area.soundcloud .keyword {
+        background-color: rgba(37, 185, 185, 0.1);
+    }
+    .strategy-area ul::after {
+        display: none;
+    }  
+    .strategy-area ul li + li {
+        margin-left: 20px;
+    }
+    .strategy-area.soundcloud ul li + li {
+        margin-left: 32px;
+    }
+    .strategy-area .description i {
+        display: none;
+    }
+}
+
 @media (hover: hover)  {   
     .design-group .img-area::after {
         content: '디자인 보기';
