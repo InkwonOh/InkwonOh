@@ -28,8 +28,14 @@
 .strategy-area ul {
     position: relative;
     display: flex;
-    margin: 0 16px;
+    margin: 0 auto;
     width: 100%;
+}
+.strategy-area.hiver ul {
+    max-width: 727px;
+}
+.strategy-area.soundcloud ul {
+    max-width: 490px;
 }
 
 .strategy-area ul li {
@@ -74,11 +80,6 @@
 }
 
 /* soundcloud */
-.strategy-area.soundcloud ul {
-    max-width: 490px;
-    margin-left: auto;
-    margin-right: auto;
-}
 .strategy-area.soundcloud ul::after {
     background-color: #25B9B9;
 }
