@@ -133,14 +133,15 @@
         height: 60px;
     }   
     .gnb .logo {
-        margin-right: 20px;
+        margin-right: 10px;
         width: 40px;
         height: 40px;
     }
-    .gnb-item:not(:first-child) {
-        margin-left: 16px;
+    .gnb-list .gnb-item {
+        padding: 0 10px;
+        height: 60px;
     }
-    .gnb-link {
+    .gnb-list .gnb-link {
         font-size: 14px;
     }
 }
