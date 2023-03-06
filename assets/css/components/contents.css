@@ -43,3 +43,7 @@
     line-height: 1.5;
     letter-spacing: -0.03em;
 }
+
+.content-section p.lh2 {
+    line-height: 2;
+}
