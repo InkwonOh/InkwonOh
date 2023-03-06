@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700');
 @import url(./base/reset.css);
 @import url(./base/preset.css);
 
@@ -9,5 +9,6 @@
 @import url(./components/cover.css);
 
 @import url(./pages/resume.css);
-@import url(./pages/career.css);
+@import url(./pages/career-gobang.css);
+@import url(./pages/career-champscore.css);
 @import url(./pages/project.css);
