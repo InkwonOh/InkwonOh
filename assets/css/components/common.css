@@ -37,6 +37,9 @@ body {
 .align-center {
     margin: 0 auto;
 }
+.mt50 { margin-top: 50px; }
+.mt100 { margin-top: 100px; }
+.mt150 { margin-top: 150px; }
 
 @media screen and (max-width: 599px) {
     .go-to-top {

@@ -39,9 +39,9 @@
                     <a href="/" class="gnb-link">Resume</a>
                 </li>
                 <li class="gnb-item">
-                    <a href="career-champscore.html" class="gnb-link is-active">Career</a>
+                    <a class="gnb-link is-active" onclick="this.classList.toggle('is-open')">Career</a>
                     <ul class="gnb-list2 no-style">
-                        <li class="gnb-item2"><a href="career-champscore.html" class="gnb-link2 champscore is-active">ChampScore</a></li>
+                        <li class="gnb-item2"><a href="career-champscore.html" class="gnb-link2 is-active champscore">ChampScore</a></li>
                         <li class="gnb-item2"><a href="career-gobang.html" class="gnb-link2 gobang">Gobang</a></li>
                     </ul>
                 </li>
@@ -228,34 +228,263 @@
 
                 <div class="group">
                     <h2 class="en">What's ChampScore?</h2>
+                    <p>
+                        <b>역사상 가장 빠르고 정확한 스포츠 라이브스코어</b><br><br>
+                        챔프스코어는 230개가 넘는 국가의 모든 종목, 20,400건이 넘는 팀라이브스코어를 제공합니다.<br>
+                        실시간 경기상황은 박스스코어로, 실시간 상황중계는 그래픽 중계로, 유저가 선택한 경기의 전력은 전력분석으로 확인할 수 있으며 더 자세한 경기상황은 중계 히스토리를 통해 알 수 있고, 경기에 참여한 선수는 라인업에서 확인할 수 있다는 <b>강력한 핵심가치</b>를 유저에게 전달하고 있습니다.<br><br>
+                        또한 <b>웹브라우저</b>를 통해 어플리케이션 없이도 모든 서비스를 이용할 수 있으며, 어플리케이션은 <b>Android 네이티브앱</b>으로써 최적화된 사용자 경험을 경험할 수 있습니다. 이것에 더하여 웹기반의 <b>하이브리드 iOS앱</b>을 통해 운영체제와 관계 없이 일관된 디자인을 경험할 수 있다는 특징을 지녔습니다.
+                    </p>
+                    <img src="./assets/images/champscore/img_champscore.png" alt="" class="mt50">
+                </div>
+            </div>
+
+            <div class="bg-gray">
+                <div class="inner">
+                    <div class="group">
+                        <h2 class="en">01 Statistics Analysis</h2>
+                        <div class="grid">
+                            <img src="./assets/images/champscore/01_asis_01.png" alt="as-is">
+                        </div>
+                        <div class="grid">
+                            <img src="./assets/images/champscore/01_tobe_01.png" alt="to-be">
+                            <img src="./assets/images/champscore/01_tobe_02.png" alt="to-be">
+                            <img src="./assets/images/champscore/01_tobe_03.png" alt="to-be">
+                            <img src="./assets/images/champscore/01_tobe_04.png" alt="to-be">
+                            <img src="./assets/images/champscore/01_tobe_05.png" alt="to-be">
+                            <img src="./assets/images/champscore/01_tobe_06.png" alt="to-be">
+                        </div>
+                        <p class="title-area">
+                            <span class="title">전력분석</span>
+                            <span class="summary">가용데이터의 인포그래픽화, 최적의 UX/UI 제공</span>                            
+                        </p>
+                        <p class="description">
+                            틀만 간신히 잡혀 있는 기존의 디자인에서 벗어나기 위하여 필요한 데이터를 전수조사하여 수집한 후, 그것을 어떻게 보여줄 것인지에 대한 고민을 통해 효과적으로 유저에게 정보를 전달할 수 있는 방법을 찾는 데에 목표를 두고 리디자인을 진행하였습니다. 또한 기획 정책을 수립하는 과정에도 참여하여 보다 나은 UX를 위한 타협또한 마다하지 않았습니다.<br><br>
+                            또한 자세한 설명 없이도 유저들이 보는 즉시 사용가능하도록 하면서도 많은 정보 안에서 필요한 정보만을 쉽게 인지할 수 있어야 한다는 기본 UX원칙을 고수하였습니다. ‘비교, 흐름, 상태, 정보’라는 네 갈래의 대분류를 통해 정보의 특성과 부합하는 인포그래픽 제작에 비중을 두었습니다.  각 그래프는 페이지 최초이동시 동적으로 게이지가 차듯 애니메이션을 적용하였습니다. 사용자가 원하는 정보가 가득하고, 눈이 즐겁고 사용하기 수월하다면 얼마나 좋을까 하는 생각을 항상 가지며 디자인 하였습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner">
+                <div class="group">
+                    <h2 class="en">02 Broadcasting History</h2>
+                    <p class="title-area">
+                        <span class="title">중계 히스토리</span>
+                        <span class="summary">가용데이터와 종목에 따른 최적의 UX/UI 제공</span>                            
+                    </p>
+                    <p class="description">
+                        기존에 사용되지 않은 가용데이터 유무를 파악하고, 데이터를 수집하면서 어떤 것이 사용자의 니즈에 부합하는 정보인지 판단하는 과정이 선행되었습니다. 이를 통하여 사용자에게 유의미한 데이터만을 선별하여 이를 효과적으로 나타내기 위한 방법이 무엇일지 동종유사 서비스, 국내외 유관 컨셉 디자인을 분석했습니다. 각 종목의 특성에 맞는 UI를 구성하기 위한 과정을 거치면서 점차 자리를 잡아갔습니다.<br><br>
+                        이또한 전력분석과 마찬가지로 ‘비교, 흐름, 상태, 정보’라는 네 갈래의 대분류를 통해 정보의 특성과 부합하는 인터페이스에 비중을 두었습니다. 이 프로덕트의 전반적인 핵심 가치에 맞는 UI를 제공하기 위해서 각 종목에 네 가지의 대분류를 대입하면 다시 여러 가지의 경우의 수가 나오게 됩니다. 따라서 아주 정확하고 세밀한 UI를 경우의 수에 따라 모두 제작하여 빠짐 없이 개발전달을 완료해야하는 과정이 무척 중요했습니다. 전체 리디자인 중 가장 많은 경우의 수를 자랑하는 작업이었습니다.<br><br>
+                        더불어 UX의 기본적인 준수 사항인 사용성과 더불어 편의성, 편리성, 유용성, 효율성, 안정성, 학습용이성 등을 기저에 바탕을 두고 인터페이스에 대한 심도 있는 고민을 이어나갔습니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray">
+                <div class="inner">
+                    <div class="group">
+                        <h2 class="en">03 Lineups</h2>
+                        <p class="title-area">
+                            <span class="title">라인업</span>
+                            <span class="summary">가용데이터와 종목에 따른 최적의 UI 제공</span>                            
+                        </p>
+                        <p class="description">
+                            기존에 기획조차 되지 못했던 가용데이터 유무를 파악하고, 데이터를 수집하면서 어떤 것이 실제로 원활히 사용가능한 데이터인지 재분류 하는 과정이 선행되었습니다. 이를 통하여 서비스 제공자가 원활히 제공할 수 있는 점에서 안정성을 확보하고, 사용자에게 유의미한 데이터임을 증명하기 위하여 동종유사 서비스, 국내외 유관 컨셉 디자인을 분석했습니다.<br><br>
+                            각 종목의 특성에 맞는 UI를 구성하기 위한 과정을 거치면서 점차 자리를 잡아갔습니다. 이또한 전력분석, 중계 히스토리와 마찬가지로 ‘비교, 흐름, 상태, 정보’라는 네 갈래의 대분류를 통해 정보의 특성과 부합하는 인터페이스에 비중을 두었습니다. 경기가 시작되기 전에 대기화면부터 경기가 끝날 때까지의 변화를 담기 위해서 필요한 정보에 맞는 인터페이스를 제공하기 위해 많은 고민이 필요했습니다. 특히 축구의 경우, 포메이션이 총 19종이 나왔으며 이를 모두 정확하게 개발전달하는 협업상황에 심혈을 기울였습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner wide">
+                <div class="group">
+                    <h2 class="en">04 Home</h2>
+                    <p class="title-area">
+                        <span class="title">홈</span>
+                        <span class="summary">종목에 따른 최적의 UI, 그리고 정리를 통한 UX개선</span>                            
+                    </p>
+                    <p class="description">
+                        각 종목의 특성에 맞는 UI를 구성하기 위한 과정을 거치면서 ‘비교, 흐름, 상태, 정보’라는 네 갈래의 대분류를 통한 정리를 도모했습니다. 유일하게 비교적 인터페이스의 정리를 목표로한 비중이 높았으며 기존의 UI에서 배치의 변화, 호버기능을 사용하지 못할 모바일 사용자를 위한 바텀 내비게이션과 최상단 종목섹션 두가지에 대해 텍스트와 함께 구성하였습니다. 이로인해 사용성 개선이 이루어졌습니다.<br><br>
+                        빠른 라이브 경기 탐색을 위한 버튼, 원하는 날짜의 경기정보를 찾아볼 수 있도록 시원하게 중앙배치한 달력 영역, 그 좌우로 하루씩 이동할 수 있는 쉐브론 버튼, 경기와 리그를 구분짓는 즐겨찾기 색상의 차이, 애니메이션으로 움직이는 각종 경기상황 등의 디테일적인 부분에도 많은 비중을 두었습니다.<br><br>
+                        또한 종료된 경기의 정보를 얻고자 하는 유저의 니즈에 부합하도록 종료된 경기를 펼치고 접으며 확인할 수 있는 기능또한 추가하였습니다. 여기서 UX기본원칙 중 가끔 등장하는 ‘재미'의 요소를 조금이라도 싣기 위하여 동적인 요소를 신경썼습니다. 화면에 보이는 CHANCE, 롤 경기의 칼모양 일러스트, 야구게임의 현재상태 등은 모두 동적인 애니메이션 요소입니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray">
+                <div class="inner">
+                    <div class="group">
+                        <h2 class="en">05 Box Score</h2>
+                        <p class="title-area">
+                            <span class="title">박스 스코어</span>
+                            <span class="summary">종목에 따른 최적의 UI, 그리고 사용성</span>                            
+                        </p>
+                        <p class="description">
+                            각 종목의 특성에 맞는 UI를 구성하기 위한 과정을 거치면서 ‘비교, 흐름, 상태, 정보’라는 네 갈래의 대분류를 통한 정리를 도모했습니다.<br>
+                            이제 이 말은 그만해도 될 듯합니다. 모든 리디자인의 기본원칙 중 한 가지가 되어버린 사항이며 매우 중요한 준거로 작용할 수 있다는 점을 시사하고 있습니다.<br><br>
+                            박스스코어는 홈에서 경기로 진입하면 나오는 응원채팅방 상단에 위치한 디폴트 UI입니다. 사용자간 대화와 포인트 획득을 즐기며 박스스코어를 시각적으로 확인할 수 있다는 점이 특장점입니다.<br><br>
+                            상단의 섹션을 통해 각종 정보를 페이지 완전이탈 없이 할 수 있다는 점이 매우 효율적입니다. 추가된 기능으로는 채팅입력창 좌측에 보이는 포인트는 응원채팅방에서 자신이 돋보일 수 있도록 여러 시각적 아이템을 구매할 수 있으며, 이는 스토어 페이지에서 가능합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner">
+                <div class="group">
+                    <h2 class="en">Dark mode & Light mode</h2>
+                    <p class="title-area">
+                        <span class="title">다크모드 & 라이트모드</span>
+                        <span class="summary">UX/UI디자이너 역량의 끝, 테마설정</span>                            
+                    </p>
+                    <p class="description">
+                        “테마색상 정하는 게 역량이야? 그냥 반전시킨 거잖아”라고 말한다면 단 한번도 이 작업을 해보지 않은 실무자일 가능성이 클 것이라고 생각합니다.<br><br>
+                        모든 시안에 정확한 값과 디테일의 끝을 달리며 개발전달을 위해 정확도 100%에 달하는 문서작성의 끝을 경험할 수 있는 최고난도 작업 중 한 가지라고 생각합니다. 특히나 서비스 안에 지정된 컬러를 많이 사용하고 이미지의 사용이 극히 제한 되었다면 말입니다.<br><br>
+                        이 작업이 가능하려면, 툴의 ‘일괄' 기능에 대한 숙련도와 ‘섬세함', ‘기억력', ‘개발전달을 위한 정보정리능력', ‘스타일가이드_컬러에 대한 이해', ‘전달이후 개발자와의 협업'에 능통해야했습니다. 수백 개의 페이별 시안, 수천 개의 컴포넌트 등에 대한 이 작업을 프론트엔드, 앱개발자 5명과 커뮤니케이션을 이어가며 무사히 구현하였습니다.<br><br>
+                        물론, 어떤 완성도를 가져가느냐에 따라 이 작업이 그다지 어렵지 않을 수도 있습니다. 다만 책임감이 강한 디자이너라면 상당히 고통스러운 작업일 것입니다. 물론 본인는 후자에 해당하며 심지어 혼자서 그것을 다 하려다보니 매우 고통스러웠지만 행복했습니다.
+                    </p>
                 </div>
 
                 <div class="group">
-                    <h2 class="en">01 Statistics Analysis</h2>
-                </div>
+                    <!-- solution summary -->
+                    <div class="solution-summary">
+                        <p class="title">Problem Summary</p>
+                        <div class="tag-area">
+                            <ul class="tag-list no-style">
+                                <li>디자인 전문인력</li>
+                                <li>워크프레임</li>
+                                <li>워크프로세스</li>
+                                <li>커뮤니케이션</li>
+                                <li>디자인 협업툴</li>
+                                <li>디자인시스템</li>
+                                <li>스타일가이드</li>
+                                <li>사용자 경험</li>
+                                <li>사용자 인터페이스</li>
+                                <li>기획문서</li>
+                                <li>데이터</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                <div class="group">
+                    <!-- epilogue -->
+                    <div class="epilogue-area">
+                        <span class="badge">Epilogue</span>
+                        <p class="big-title">비하인드 스토리</p>
+                        <p>생각해보면 전체 서비스를 혼자서 리디자인 한다는 것은 참으로 경이로운 작업이었다.</p>
+                        <div class="grid">
+                            <div>
+                                <ul>
+                                    <li>회원가입
+                                        <ul>
+                                            <li>이메일 입력. 비밀번호 입력</li>
+                                            <li>모바일 인증, 이메일 인증</li>
+                                            <li>약관동의
+                                                <ul>
+                                                    <li>이 모든 것에 따른 유효성검증</li>
+                                                    <li>... 생략</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <br>
+                                <ul>
+                                    <li>로그인
+                                        <ul>
+                                            <li>이메일 입력, 비밀번호 입력
+                                                <ul>
+                                                    <li>이 모든 것에 따른 유효성검증</li>
+                                                </ul>
+                                            </li>
+                                            <li>아이디 찾기</li>
+                                            <li>모바일번호 변경
+                                                <ul>
+                                                    <li>기존 인증자가 아닌경우, 맞는 경우</li>
+                                                    <li>이미 이메일 인증을 한 경우, 아닌 경우</li>
+                                                </ul>
+                                            </li>
+                                            <li>....생략</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <br>
+                                <ul>
+                                    <li>프로필
+                                        <ul>
+                                            <li>프로필 수정</li>
+                                            <li>닉네임 변경</li>
+                                            <li>프로필 사진 변경</li>
+                                            <li>상태메세지 변경</li>
+                                            <li>이 모든 것에 따른 유효성검증</li>
+                                            <li>...생략</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
 
-                </div>
-
-                <div class="group">
-
-                </div>
-
-                <div class="group">
-
-                </div>
-
-                <div class="group">
-
-                </div>
-
-                <div class="group">
-
-                </div>
-
-                <div class="group">
-
+                            <div>
+                                <ul>
+                                    <li>타회원
+                                        <ul>
+                                            <li>팔로우, 팔로우 취소</li>
+                                            <li>차단, 차단해제</li>
+                                            <li>...생략</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <br>
+                                <ul>
+                                    <li>정책 약관, 공지사항, 커뮤니티
+                                        <ul>
+                                            <li>게시판
+                                                <ul>
+                                                    <li>카테고리, 제목, 본문, 이미지 첨부</li>
+                                                    <li>각 항목에 대한 제한과 정책</li>
+                                                    <li>...생략</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <br>
+                                <ul>
+                                    <li>스토어
+                                        <ul>
+                                            <li>포인트 획득, 소모처
+                                                <ul>
+                                                    <li>아이템별 사용 기한 및 상태확인</li>
+                                                    <li>...생략</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <br>
+                                <ul>
+                                    <li>즐겨찾기
+                                        <ul>
+                                            <li>경기등록</li>
+                                            <li>리그등록
+                                                <ul>
+                                                    <li>일괄제어</li>
+                                                    <li>삭제</li>
+                                                    <li>달력에 따른 정책</li>
+                                                    <li>...생략</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <br>+ 스토어 스크린샷, 앱아이콘 등.....
+                            </div>
+                        </div>
+                        <p class="epilogue-text">
+                            미쳐서 작업을 했던 기억 뿐이다. 퇴근할 때 넋이 빠져나가기를 수차례 반복했다. 물론 힘들지 않았다면 거짓말이다.<br>
+                            하지만, 무척이나 뜻깊고 뿌듯하다. 그리고 해결해야할 문제는 여전히 보이고 또 보인다.<br>
+                            가끔은 내가 의사라도 된 양 UX/UI에 대한 진단을 하곤 한다. 아주 틀린 말은 아니라 토닥토닥정돈 할 수 있다고 본다.<br>
+                            만일 이 포트폴리오에서 지금 이 텍스트까지 정말 면밀하게 읽고 있는 인사담당자 혹은 팀장이 있다면 나를 눈독들이기를 바란다.<br><br>
+                            <b><em>나는 더 배우고 싶고 더 경험하고 싶고 더 전문가가 되고 싶다.</em></b>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>

@@ -73,13 +73,12 @@
     letter-spacing: 0.5px;
 }
 
-.gnb-list .gnb-item:hover .gnb-list2 {
-    display: block;
-}
-
 .gnb-list .gnb-link.is-active {
     font-weight: 700;
     border-bottom: 2px solid #666;
+}
+.gnb-link.is-open + .gnb-list2 {
+    display: block;
 }
 
 /* gnb 2depth */
@@ -144,12 +143,13 @@
     .gnb-list .gnb-link {
         font-size: 14px;
     }
+    .gnb-list2 {
+        top: 49px;
+    }
 }
 
 @media (hover: hover) {
-    .gnb-link:not(.is-active):hover {
-        opacity: 0.5;
-    }
+    .gnb-link:not(.is-active):hover,
     .gnb-link2:not(.is-active):hover {
         opacity: 0.5;
     }

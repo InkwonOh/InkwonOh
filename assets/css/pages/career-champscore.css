@@ -25,7 +25,8 @@
   padding: 0 24px;
 }
 
-.problem-summary {
+.problem-summary,
+.solution-summary {
   padding: 50px 0;
   margin: 100px 0 0;
   border-width: 1px 0px;
@@ -33,7 +34,8 @@
   border-color: #E3E3EA;
 }
 
-.problem-summary .title {
+.problem-summary .title,
+.solution-summary .title {
   position: relative;
   padding-left: 24px;
   font-size: 18px;
@@ -41,7 +43,8 @@
   line-height: 150%;
 }
 
-.problem-summary .title::before {
+.problem-summary .title::before,
+.solution-summary .title::before {
   content: '';
   position: absolute;
   top: 11px;
@@ -53,33 +56,46 @@
   background-color: currentColor;
 }
 
-.problem-summary .tag-area {
+.problem-summary .tag-area,
+.solution-summary .tag-area {
   margin-top: 16px;
 }
 
-.problem-summary .tag-area .tag-list {
+.problem-summary .tag-area .tag-list,
+.solution-summary .tag-area .tag-list {
   display: flex;
   flex-wrap: wrap;
   padding: 0 100px 0 40px;
   gap: 16px;
 }
 
-.problem-summary .tag-area .tag-list li {
+.problem-summary .tag-area .tag-list li,
+.solution-summary .tag-area .tag-list li {
   flex-shrink: 0;
   padding: 6px 12px;
   border-radius: 10px;
-  background: #F7DDDA;
   line-height: 150%;
   font-size: 13px;
   font-weight: 700;
+}
+
+.problem-summary .tag-area .tag-list li {
+  background: #F7DDDA;
   color: #D75746;
 }
 
-.prologue-area {
+.solution-summary .tag-area .tag-list li {
+  background: #DAE9F7;
+  color: #4067F6;
+}
+
+.prologue-area,
+.epilogue-area {
   padding: 150px 40px 100px;
 }
 
-.prologue-area .badge {
+.prologue-area .badge,
+.epilogue-area .badge {
   padding: 6px 16px;
   border-radius: 18px;
   background: #F2F2F6;
@@ -88,7 +104,8 @@
   color: #86869A;
 }
 
-.prologue-area .big-title {
+.prologue-area .big-title,
+.epilogue-area .big-title {
   margin-top: 16px;
   font-weight: 700;
   font-size: 32px;
@@ -218,6 +235,35 @@
 }
 
 .double-diamond-area .box p em {
+  font-style: normal;
+  color: #4067F6;
+}
+
+.group .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.group .grid img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.epilogue-area .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.epilogue-text {
+  margin-top: 40px;
+  line-height: 2;
+  color: #3C3C3C;
+}
+
+.epilogue-text b em {
   font-style: normal;
   color: #4067F6;
 }
