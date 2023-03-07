@@ -34,13 +34,6 @@ body {
     cursor: pointer;
 }
 
-.align-center {
-    margin: 0 auto;
-}
-.mt50 { margin-top: 50px; }
-.mt100 { margin-top: 100px; }
-.mt150 { margin-top: 150px; }
-
 @media screen and (max-width: 599px) {
     .go-to-top {
         bottom: 20px;
@@ -100,3 +93,11 @@ ul.no-margin li {
     color: #e8e8e8;
     text-align: center;
 }
+
+/* shortcut */
+.m0auto { margin: 0 auto; }
+.flex-center { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.mt24 { margin-top: 24px; }
+.mt50 { margin-top: 50px; }
+.mt100 { margin-top: 100px; }
+.mt150 { margin-top: 150px; }

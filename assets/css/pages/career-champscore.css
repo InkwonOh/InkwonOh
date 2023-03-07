@@ -21,6 +21,10 @@
   margin-top: 16px;
 }
 
+.warning-box .text span {
+  color: #86869A;
+}
+
 .problem-area {
   padding: 0 24px;
 }
@@ -250,6 +254,10 @@
   text-align: center;
 }
 
+.group .grid img:only-child {
+  grid-column: 2 / span 1;
+}
+
 .epilogue-area .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -266,4 +274,69 @@
 .epilogue-text b em {
   font-style: normal;
   color: #4067F6;
+}
+
+.content-section.career.champscore h2.en {
+  margin-bottom: 48px;
+}
+
+.label-as-is,
+.label-to-be {
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #606060;
+  text-align: center;
+}
+
+.label-to-be {
+  color: #000;
+}
+
+.grid.to-be img {
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.group.as-is-to-be .title-area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.group.as-is-to-be .title-area .title {
+  color: #86869A;
+}
+
+.group.as-is-to-be .title-area .summary::before {
+  content: '';
+  display: inline-block;
+  margin: 0 8px;
+  width: 1px;
+  height: 14px;
+  background-color: #dfe3e8;
+  transform: translateY(2px);
+}
+
+.group.as-is-to-be .title-area .summary {
+  color: #000;
+}
+
+.group.as-is-to-be .description {
+  margin-top: 16px;
+  line-height: 2;
+}
+
+.grid-center {
+  display: flex;
+  gap: 16px;
+}
+
+@media screen and (max-width: 599px) {
+  .group.as-is-to-be .title-area .summary::before {
+    display: none;
+  }
 }
