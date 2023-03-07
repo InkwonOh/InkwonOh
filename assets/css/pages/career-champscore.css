@@ -295,7 +295,8 @@
 }
 
 .grid-to-be img,
-.grid.to-be img {
+.grid.to-be img,
+.has-shadow {
   border-radius: 10px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
 }
@@ -355,7 +356,10 @@
   display: grid; 
   grid-template-columns: 1fr 68px 2fr; 
   gap: 24px; 
-  align-items: stretch;
+  align-items: flex-end;
+}
+.grid-home .ico-right {
+  align-self: center;
 }
 .grid-home .grid-to-be {
   display: grid;
@@ -391,6 +395,9 @@
 
 /* mobile */
 @media screen and (max-width: 599px) {
+  .warning-box {
+    padding: 24px;
+  }
   .problem-area {
     padding: 0;
   }
@@ -402,7 +409,7 @@
     padding: 100px 0 80px;
   }
   .double-diamond-area {
-    padding: 40px 16px;
+    padding: 24px 16px;
   }
   .double-diamond-area .box .text,
   .double-diamond-area .box ul {
@@ -431,7 +438,6 @@
   .grid-home {
     grid-template-columns: 1fr 24px 2fr;
     gap: 10px;
-    overflow: hidden;
   }
   .grid-theme {
     gap: 16px;
