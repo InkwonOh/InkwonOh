@@ -96,6 +96,7 @@ ul.no-margin li {
 
 /* shortcut */
 .m0auto { margin: 0 auto; }
+.m70auto { margin: 70px auto; }
 .flex-center { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 .mt24 { margin-top: 24px; }
 .mt50 { margin-top: 50px; }

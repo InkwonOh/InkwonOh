@@ -69,7 +69,7 @@
 .solution-summary .tag-area .tag-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 100px 0 40px;
+  padding: 0 60px 0 40px;
   gap: 16px;
 }
 
@@ -282,6 +282,7 @@
 
 .label-as-is,
 .label-to-be {
+  display: block;
   margin-top: 24px;
   font-size: 18px;
   font-weight: 700;
@@ -293,6 +294,7 @@
   color: #000;
 }
 
+.grid-to-be img,
 .grid.to-be img {
   border-radius: 10px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
@@ -329,14 +331,85 @@
   margin-top: 16px;
   line-height: 2;
 }
+.group.as-is-to-be .description span {
+  color: #86869A;
+}
 
 .grid-center {
   display: flex;
   gap: 16px;
 }
 
+.grid.to-be.with-label {
+  grid-row-gap: 48px;
+}
+.grid.to-be.with-label .label-to-be {
+  margin-top: 24px;
+}
+
+/* 04 Home */
+.inner.wide.home {
+  max-width: 1252px;
+}
+.grid-home { 
+  display: grid; 
+  grid-template-columns: 1fr 68px 2fr; 
+  gap: 24px; 
+  align-items: stretch;
+  overflow: auto;
+}
+.grid-home .grid-to-be {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.grid-home .img {
+  max-width: 360px;
+}
+
+/* Dark & Light mode */
+.grid-theme {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
 @media screen and (max-width: 599px) {
+  .problem-area {
+    padding: 0;
+  }
+  .problem-summary .tag-area .tag-list, .solution-summary .tag-area .tag-list {
+    padding: 0 20px;
+    gap: 8px;
+  }
+  .prologue-area, .epilogue-area {
+    padding: 100px 0 80px;
+  }
+  .double-diamond-area {
+    padding: 40px 16px;
+  }
+  .double-diamond-area .box .text,
+  .double-diamond-area .box ul {
+    padding: 0;
+  }
+  .double-diamond-area .box ol:not(.gap),
+  .double-diamond-area .box ol.gap {
+    padding-left: 16px;
+  }
+  .double-diamond-area .box ol li .badge {
+    margin-left: -16px;
+  }
+  .grid.to-be.with-label .label-to-be {
+    font-size: 14px;
+  }
+  .group.as-is-to-be .title-area {
+    display: block;
+  }
   .group.as-is-to-be .title-area .summary::before {
     display: none;
+  }
+  .group.as-is-to-be .title-area .summary {
+    display: block;
+    margin-top: 2px;
   }
 }
