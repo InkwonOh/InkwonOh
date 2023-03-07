@@ -31,29 +31,29 @@ window.addEventListener('scroll', function () {
 const isIE = (window.navigator.userAgent.indexOf('Trident') != -1);
 
 // 페이지 로드 
-document.addEventListener('DOMContentLoaded', function () {
-    const html = document.documentElement;
-    const btnDark = document.querySelector('#btn-theme');
-    const storedTheme = localStorage.getItem('darkTheme');
+// document.addEventListener('DOMContentLoaded', function () {
+//     const html = document.documentElement;
+//     const btnDark = document.querySelector('#btn-theme');
+//     const storedTheme = localStorage.getItem('darkTheme');
 
-    if (isIE) {
-        btnDark.style.display = 'none';
-    }
-    else {
+//     if (isIE) {
+//         btnDark.style.display = 'none';
+//     }
+//     else {
 
-        if (storedTheme !== null) {
-            if (storedTheme === 'true') {
-                html.classList.add('dark');
-                btnDark.setAttribute('data-darkmode', 'true');
-            }
-        }
-        else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            html.classList.add('dark');
-            btnDark.setAttribute('data-darkmode', 'true');
-        }
-        document.body.style.visibility = 'visible';
-    }
-})
+//         if (storedTheme !== null) {
+//             if (storedTheme === 'true') {
+//                 html.classList.add('dark');
+//                 btnDark.setAttribute('data-darkmode', 'true');
+//             }
+//         }
+//         else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+//             html.classList.add('dark');
+//             btnDark.setAttribute('data-darkmode', 'true');
+//         }
+//         document.body.style.visibility = 'visible';
+//     }
+// })
 
 window.addEventListener('load', function () {
     // Darkmode

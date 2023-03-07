@@ -118,6 +118,7 @@
     font-size: 20px;
     transition: transform 0.5s;
     cursor: pointer;
+    display: none;
 }
 .btn-theme span {
     display: block;
